@@ -16,6 +16,7 @@ body {
 	flex-direction: column;
 	margin-top: 10em;
 	width: 600px;
+	
 }
 .up-container {
 	display: flex;
@@ -24,6 +25,8 @@ body {
 	align-items: center;
 	background-image: linear-gradient(120deg, #0642a1 35%, #234d61 100%);
 	height: 140px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
 }
 .flex-container {
 	display: flex;
@@ -63,6 +66,8 @@ input {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 .tittle {
 	font-size: 2.7rem;
