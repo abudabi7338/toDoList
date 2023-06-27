@@ -15,7 +15,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-top: 10em;
-	width: 600px;
+	width: 350px;
 	
 }
 .up-container {
@@ -79,3 +79,12 @@ input {
 .no-task{
 	font-size: 1.4rem;
 }
+
+@media (min-width: 600px) {
+	.container {
+	  width: 580px;
+	}}
+@media (min-width: 1000px) {
+	.container {
+	  width: 880px;
+	}}
