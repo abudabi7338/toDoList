@@ -3,16 +3,35 @@ const btnAdd = document.querySelector('.btn-add');
 const downContainer = document.querySelector('.down-container');
 const noTask = document.querySelector('.no-task');
 
+let newLi
 
-const add = () => {
+const ulList = document.querySelector('.task');
 
-	let inputValue = input.value;
+const createToolsArea = () => {
+	 const toolsPanel = document.createElement('div');
+	toolsPanel.classList.add('tools-area');
 
-	const newParagraph = document.createElement('p');
-	newParagraph.textContent = `${inputValue}`
-	downContainer.append(newParagraph);
-    noTask.remove()
+	const btnCorrect = document.createElement('button');
+	btnCorrect.innerHTML = '<i class="fa-solid fa-check" style="color: #05c736;"></i>';
 
+	const btnDelete = document.createElement('button');
+	btnDelete.innerHTML = '<i class="fa-solid fa-x" style="color: #e10e0e;"></i>';
+
+	const btnEdit = document.createElement('button');
+	btnEdit.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
+
+	toolsPanel.append(btnCorrect, btnDelete, btnEdit);
+	newLi.append(toolsPanel)
 };
 
-btnAdd.addEventListener('click', add);
+const createTask = () => {
+	let inputValue = input.value;
+	newLi = document.createElement('li');
+	newLi.textContent = `${inputValue}`;
+	ulList.append(newLi);
+	
+
+	createToolsArea();
+};
+
+btnAdd.addEventListener('click', createTask);
