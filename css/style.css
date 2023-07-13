@@ -19,6 +19,8 @@ button {
 	flex-direction: column;
 	margin-top: 10em;
 	width: 350px;
+
+	box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
 }
 .up-container {
 	display: flex;
@@ -43,7 +45,7 @@ button {
 }
 .btn-add {
 	height: 30px;
-	width: 60px;
+	width: 65px;
 	margin-left: 1em;
 	padding: 0.7em;
 	background-color: #fff;
@@ -51,8 +53,15 @@ button {
 	border-color: transparent;
 	display: flex;
 	align-items: center;
-
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+	text-transform: uppercase;
 	color: #0642a1;
+}
+.btn-add:hover {
+	background-color: rgba(24, 118, 161, 0.3);
+	color: #fff;
 }
 
 input {
@@ -77,12 +86,11 @@ input {
 }
 
 .task {
-	font-size: 2rem;
+	font-size: 1.7rem;
 
-	width: 80%;
+	width: 90%;
 	border-radius: 5px;
-	background: #fff;
-	box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+
 	text-align: center;
 }
 
@@ -90,14 +98,15 @@ input {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 15px;
+	height: 30px;
 	padding-left: 20px;
+	margin: 10px 0;
 	text-align: left;
 	list-style: none;
-	background-color: rgb(245, 245, 245);
+	background-color: rgba(160, 160, 160, 0.3);
 }
 .tools-area button {
-	padding: 15px 10px;
+	padding: 10px 15px;
 	border: none;
 	background-color: transparent;
 	transition: background-color 0.3s;
@@ -115,6 +124,25 @@ input {
 }
 .no-task {
 	font-size: 1.4rem;
+}
+
+.completed {
+	font-size: 12px;
+	font-style: italic;
+	text-decoration: line-through;
+	background-color: #8f8c8c;
+}
+.complete {
+    background-color: #fff;;
+}
+
+.edit {
+    font-weight: bold;
+    color: rgb(20, 27, 19);
+}
+
+.delete {
+    color: tomato;
 }
 
 @media (min-width: 600px) {
